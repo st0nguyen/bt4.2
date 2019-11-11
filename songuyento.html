@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let count = 0;
+        let N = 2;
+        var flag = true;
+        while (N < 20) {
+            if (N < 2) {
+                flag = false;
+            }
+            else {
+
+                for (var i = 2; i < N - 1; i++) {
+                    if (N % i == 0) {
+                        flag = false;
+                        break;
+                    }
+                    else
+                        flag = true
+                }
+            }
+
+
+            if (flag == true) {
+                console.log(N);
+                N++
+            }
+            else {
+                N++
+            }
+        }
+    </script>
+</body>
+
+</html>
